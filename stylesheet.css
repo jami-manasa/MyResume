@@ -1,0 +1,87 @@
+
+body {
+  background-image: url('manu.jpg');
+  
+}
+
+            .co {
+               width:80%;
+               float:left;
+                margin:50px;
+                margin-left: 10%;
+                margin-right: -20%;
+                box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+                background-color:rgba(255, 255, 255, .12);
+            }
+             .co1 {
+               width:80%;
+               float:left;
+               margin:50px;
+               margin-left: 10%;
+               margin-right: -20%;
+               box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+               background-color: black;
+          }
+
+            .dot {
+                height: 150px;
+                width: 150px;
+                box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+                background-image: url('manasaj.jpg');
+                background-size:100% 100%;
+                border-radius: 30%;
+                margin:15px 15px;
+                display: inline-block;
+            }
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .container > div {
+                background-color: gray;
+                font-size: 20px;
+                margin: 20px;
+                padding: 20px;
+                width: 600px;
+               
+            }
+
+            .btn-group-vertical {
+                display: inline-flex; 
+                flex-direction: column;
+            }
+         .btn {    
+            display: inline-block;
+            color: #ffffff;
+            background-color: gray;
+            cursor: pointer;
+            background :gray;
+            text-align: center;
+             margin:5px;
+            padding: 15px 32px;
+            font-size: 16px;
+            border-radius: .25rem;
+            display: inline;
+            transition: .15s ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: transparent;
+        }
+        .btn:focus { 
+            box-shadow: 0 0 0 0.2rem rgba(38,143,255,.5)
+        }
+
+         @media (min-width: 700px) {
+                h1::before {
+                    content: "Jami Manasa";
+                } 
+            }
+
+            @media (max-width: 599px) {
+                h1::before {
+                    content: "J Manasa";
+                }
+            }
+
