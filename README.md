@@ -1,5 +1,5 @@
 # aws_cm -->
-##SS
+## SS
 
 <details><summary><b>1.auto_scale_max_count.py:</b></summary>
 <br>
