@@ -5,6 +5,7 @@
 <br>
 
 **Intension of script:**
+
 Updating maximum_capacity based on user_maximum_capacity.
 
 **Work flow:**
@@ -22,20 +23,21 @@ Updating maximum_capacity based on user_maximum_capacity.
 <br>
 
 **Intension of script::**
+
 Getting autos calling group details from aws console and store it in database.
 
 
 **Work flow:**
-*Getting account details from ad.aws_accounts.
-*Getting columns from "ss.auto_scaling_groups".
-*Creating an empty dataframe(data_from_aws) with table column name to store data from aws.
-*Account wise (in account id list): Here getting details of that particular account like (region , assume role, account name )--> region wise(in region list ): Here creating clients(like "autoscaling","ec2","ssm") acc. requirement .
-*Using created client call required methods(auto_client.describe_policies(),auto_client.describe_tags(),auto_client.describe_auto_scaling_groups ()) to get data from aws console and convert it into json data.
-*From json data get required data to store data in database.
-* Note: In auto scaling we can’t get all required data from one method. Here we are using 3 different methods i.e. auto_client.describe_policies(),policy deatils, auto_client.describe_tags(),for tags deatils ,auto_client.describe_auto_scaling_groups (), for getting details of auto scaling group.
-*After getting required data append all required data in data frame.
-*If data frame is empty it will go for remove_records () and clear all previous data as nothing to store in data base.
-*If data frame is not empty it will go for pass_to_db() and do curd operations with condition.
+* Getting account details from ad.aws_accounts.
+* Getting columns from "ss.auto_scaling_groups".
+* Creating an empty dataframe(data_from_aws) with table column name to store data from aws.
+* Account wise (in account id list): Here getting details of that particular account like (region , assume role, account name )--> region wise(in region list ): Here creating clients(like "autoscaling","ec2","ssm") acc. requirement .
+* Using created client call required methods(auto_client.describe_policies(),auto_client.describe_tags(),auto_client.describe_auto_scaling_groups ()) to get data from aws console and convert it into json data.
+* From json data get required data to store data in database.
+* Note: In auto scaling we can’t get all required data from one method. Here we are using 3 different methods i.e. auto_client. describe_policies(),policy deatils, auto_client.describe_tags(),for tags deatils ,auto_client.describe_auto_scaling_groups (), for    getting details of auto scaling group.
+* After getting required data append all required data in data frame.
+* If data frame is empty it will go for remove_records () and clear all previous data as nothing to store in data base.
+* If data frame is not empty it will go for pass_to_db() and do curd operations with condition.
 
 
 </details>
@@ -49,6 +51,7 @@ Getting autos calling group details from aws console and store it in database.
 <br>
 
 **Intension of script::**
+
 Getting ec2 instances details from aws console and store it in database.
 
 **Work flow:**
@@ -85,6 +88,7 @@ Getting ec2 instances details from aws console and store it in database.
 <br>
 
 **Intension of script::**
+
 It has to start instances based on start time stored in database.
 
 **Work flow:**
@@ -107,6 +111,7 @@ It has to start instances based on start time stored in database.
 <br>
 
 **Intension of script::**
+
 It has to start instances based on stop time stored in database.
 
 **Work flow:**
@@ -130,6 +135,7 @@ It has to start instances based on stop time stored in database.
 <br>
 
 **Intension of script::**
+
 Getting rds database details from aws console and store it in database.
 
 **Work flow:**
@@ -161,6 +167,7 @@ Getting rds database details from aws console and store it in database.
 <br>
 
 **Intension of script::**
+
 It has to start rds database based on start time stored in database.
 
 **Work flow:**
@@ -178,6 +185,7 @@ It has to start rds database based on start time stored in database.
 <br>
 
 **Intension of script::**
+
 It has to start rds database based on stop time stored in database.
 
 **Work flow:**
@@ -193,6 +201,7 @@ It has to start rds database based on stop time stored in database.
 <br>
 
 **Intension of script:**
+
 Updating scale_in_count minimum capacity at scale_in_time.
 
 **Work flow:**
@@ -208,7 +217,9 @@ Updating scale_in_count minimum capacity at scale_in_time.
 <!-- ########################################################################### -->
 <details><summary><b>12.scheduled_scale_out.py:</b></summary>
 <br>
+
 **Intension of script:**
+
 Updating scale_out_count with minimum capacity at scale_out_time.
 
 **Work flow:**
